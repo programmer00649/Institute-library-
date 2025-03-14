@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>مكتبة أهل الحديث</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="library-container">
+    <header>
+      <h1 class="thuluth-font">المكتبة الطبية</h1>
+      <p>معهد دكتور أمين ناشر للعلوم الطبية - شبوة</p>
+    </header>
+    
+    <div class="books-container">
+      <h2>الكتب المتاحة</h2>
+      <div class="search-box">
+        <div class="search-filters">
+          <select id="department-filter">
+            <option value="">كل الأقسام</option>
+          </select>
+          <select id="year-filter" disabled>
+            <option value="">السنة الدراسية</option>
+          </select>
+          <select id="semester-filter" disabled>
+            <option value="">الفصل الدراسي</option>
+          </select>
+          <select id="subject-filter" disabled>
+            <option value="">المادة</option>
+          </select>
+        </div>
+        <input type="text" id="search-input" placeholder="البحث بواسطة اسم الكتاب أو المؤلف...">
+        <p class="search-tip">حدد الفلاتر المطلوبة ثم ابحث عن الكتاب</p>
+      </div>
+      <div id="books-grid" class="books-grid">
+        <!-- Books will be added here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- قسم معلومات المطور -->
+  <footer class="developer-info">
+    <div class="developer-container">
+      <h2>عن المكتبة</h2>
+      <p>المكتبة الإلكترونية لمعهد دكتور أمين ناشر للعلوم الطبية</p>
+      <p class="contribution-call">هل لديك كتب أو مراجع طبية تود إضافتها إلى مكتبة المعهد؟ 
+        يمكنك التواصل معنا لإضافتها وإثراء المحتوى العلمي للطلاب!</p>
+      
+      <div class="contact-section">
+        <a href="https://wa.me/967775960910" class="whatsapp-btn" target="_blank">
+          <i class="whatsapp-icon"></i>
+          <span>تواصل معنا عبر واتساب</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for book details -->
+  <div id="book-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="modal-book-details">
+        <!-- Book details will be added here by JavaScript -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
